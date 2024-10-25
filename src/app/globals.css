@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.markdown-body pre, .markdown-body code {
+  background-color: #f0f0f0; /* Lighter grey for better visibility */
+  color: #333; /* Darker text color for contrast */
+  padding: 0.5em; /* Slightly increased padding */
+  border-radius: 5px;
+  overflow-x: auto; /* Ensure long code does not break the layout */
+}
+
+/* Ensuring text does not overflow its container */
+.markdown-body, .markdown-body pre, .markdown-body code {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  white-space: pre-wrap; /* For code blocks to maintain formatting but wrap */
+}
