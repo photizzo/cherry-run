@@ -158,7 +158,7 @@ flowchart LR
 - Private subnets for enhanced security
 - Public subnets only for load balancers and bastions
 
-![System Architecture Overview](screenshot/image.png)
+![System Architecture Diagram](screenshot/system_architecture.png)
 
 ## System Components
 The UMPIRE-Run architecture is built to be both modular and scalable.
