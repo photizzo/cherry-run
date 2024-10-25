@@ -124,8 +124,6 @@ flowchart LR
     class Users users
 ```
 
-![System Architecture Overview](screenshot/image.png)
-
 ### Key Components
 
 #### Client Layer
@@ -160,6 +158,7 @@ flowchart LR
 - Private subnets for enhanced security
 - Public subnets only for load balancers and bastions
 
+![System Architecture Overview](screenshot/image.png)
 
 ## System Components
 The UMPIRE-Run architecture is built to be both modular and scalable.
